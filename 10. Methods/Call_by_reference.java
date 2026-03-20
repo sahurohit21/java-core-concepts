@@ -1,4 +1,4 @@
-public class Passing_object {
+public class Call_by_reference {
     static void change(int X[], int index, int value) {
         X[index] = value;
     }
