@@ -1,23 +1,14 @@
 public class Overloading {
 
-    static int max(int a, int b) {
-        return a > b ? a : b;
+    static double area(double radius) {
+        return Math.PI * radius * radius;
     }
 
-    static float max(float a, float b) {
-        return a > b ? a : b;
-    }
-
-    static int max(int a, int b, int c) {
-        if (a > b && a > c)
-            return a;
-        else if (b > c)
-            return b;
-        else
-            return c;
+    static double area(double length, double breadth) {
+        return length * breadth;
     }
 
     public static void main(String args[]) {
-        System.out.print(max(3, 7, 5));
+        System.out.print(area(9.36));
     }
 }
