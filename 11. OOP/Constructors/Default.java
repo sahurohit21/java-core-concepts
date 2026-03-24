@@ -11,7 +11,7 @@ class DefaultTest {
     }
 }
 
-public class Default_C {
+public class Default {
     public static void main(String[] args) {
         DefaultTest d = new DefaultTest();
 
