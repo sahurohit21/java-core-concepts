@@ -3,6 +3,8 @@ class ParameterizedTest{
     private double length;
     private double width;
 
+    // Parameterized Constructor
+
     public ParameterizedTest(double length, double width){
         this.length = length;
         this.width = width;
