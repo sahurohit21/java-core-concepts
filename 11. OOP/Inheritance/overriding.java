@@ -1,21 +1,33 @@
 package Inheritance;
 
-class Super {
-    public void display(){
-        System.out.println("Super Class");
+class TV {
+    public void switchON(){
+        System.out.println("TV is switched on.");
+    }
+    public void changeChannel(){
+        System.out.println("TV channel is changed.");
     }
 }
 
-class Sub extends Super{
+class SmartTV extends TV{
     @Override
-    public void display(){
-        System.out.println("Sub Class");
+    public void switchON() {
+        System.out.println("SmartTV is switched on");
     }
+    @Override
+    public void changeChannel(){
+        System.out.println("SmartTV channel is changed.");
+    }
+    public void browse(){
+        System.out.println("SmartTV browsing.");
+    }
+
 }
 
 public class overriding{
     public static void main(String[] args){
-        Super s = new Sub();   // Dynamic Method Dispatch
-        s.display();
+        TV s = new SmartTV();   // Dynamic Method Dispatch
+        s.switchON();
+        s.changeChannel();
     }
 }
