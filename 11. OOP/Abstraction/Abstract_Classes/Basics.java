@@ -1,4 +1,4 @@
-package Abstraction;
+package Abstraction.Abstract_Classes;
 
 abstract  class Super{
     public Super(){
@@ -18,7 +18,7 @@ class Sub extends Super{
 
 }
 
-public class AbstractClass {
+public class Basics {
     public static void main(String[] args){
         Super s = new Sub();
         s.meth1();
